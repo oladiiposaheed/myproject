@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HOme</title>
+    <style media="screen">
+      h1{
+        margin-top: 30px;
+        color: green;
+      }
+      div{
+        text-align: center;
+      }
+      body{
+      background-image: url("{% static 'house5.jpg' %}");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      }
+      input[type=submit]{
+        background-color: #1a2b3c;
+        color: white;
+        cursor: pointer;
+        padding: 15px 18px;
+      }
+      .inp:hover {
+        box-shadow: 10px 10px #fade12;
+      }
+      .inp:hover{
+        background-color: #fd5c3d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <h1>House Price Prediction System</h1>
+      <form class="" action="predict">
+        <input type="submit" class="inp" name="" value="START">
+      </form>
+    </div>
+  </body>
+</html>
