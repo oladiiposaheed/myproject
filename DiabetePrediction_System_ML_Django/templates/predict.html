@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>predict page</title>
+    <style media="screen">
+      body{
+        background-image: url("{% static 'diabetesPrediction/images/diabetes2.jpg' %}");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .main{
+        position:fixed;
+        top:120px;
+        left:400px;
+        width:500px;
+        background-color:purple;
+        border-radius: 50%;
+        padding:5%;
+        color:#fff;
+      }
+      /* .d2{
+        text-align: center; */
+      }
+      .h{
+        text-align: center;
+      }
+      .c1{
+        text-align: center;
+      }
+      input[type=submit]{
+        background-color: #baa11b;
+        color: white;
+        cursor: pointer;
+        padding: 5px 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="h">Predicted Page</h1>
+    <div align='center' class="main">
+      <h3>Please Fill the Information Below</h3>
+      <form class="" action="result">
+        <table>
+          <tr>
+            <td align='right'>Pregnancies: </td>
+            <td align='left'><input type="text" name="n1" value=""></td>
+          </tr>
+
+          <tr>
+            <td align='right'>Glucose: </td>
+            <td align='left'><input type="text" name="n2" value=""></td>
+          </tr>
+
+          <tr>
+            <td align='right'>Blood Pressure: </td>
+            <td align='left'><input type="text" name="n3" value=""></td>
+          </tr>
+
+          <tr>
+            <td align='right'>Thickness: </td>
+            <td align='left'><input type="text" name="n4" value=""></td>
+          </tr>
+
+          <tr>
+            <td align='right'>Insulin: </td>
+            <td align='left'><input type="text" name="n5" value=""></td>
+          </tr>
+
+          <tr>
+            <td align='right'>BMI: </td>
+            <td align='left'><input type="text" name="n6" value=""></td>
+          </tr>
+
+          <tr>
+            <td align='right'>Diabetes Pedigree function: </td>
+            <td align='left'><input type="text" name="n7" value=""></td>
+          </tr>
+
+          <tr>
+            <td align='right'>Age: </td>
+            <td align='left'><input type="text" name="n8" value=""></td>
+          </tr>
+        </table>
+        <input type="submit" class="inp" name="" value="Submit">
+      </form>
+      Result: {{result1}}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+      background-image: url("{% static 'diabetesPrediction/images/diabetes1.jpg' %}");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      }
+      .d1{
+        text-align: center;
+        color: #8c7000;
+      }
+      .h{
+        text-align: center;
+      }
+      input[type=submit]{
+        background-color: #1a2b3c;
+        color: white;
+        cursor: pointer;
+        padding: 15px 18px;
+        border-radius: 50%;
+      }
+      .inp:hover {
+        box-shadow: 10px 10px #fade12;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d1">
+      <marquee direction="up"><h1 class="h">DIABETES PREDICTION SYSTEM</h1></marquee>
+      <form class="" action="predict">
+        <input type="submit" name="" class="inp" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
