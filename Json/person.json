@@ -1,0 +1,7 @@
+import json
+person = '''
+{
+    "name": "Bob",
+    "languages": ["English", "French"]
+}
+'''
