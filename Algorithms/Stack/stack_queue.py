@@ -1,0 +1,11 @@
+import queue
+s = queue.LifoQueue(3)
+s.put(10)
+s.put(20)
+s.put(30)
+s.put(30, timeout=2)
+print(s)
+#print(s.get())
+#print(s.get())
+print(s.get())
+print(s.get())

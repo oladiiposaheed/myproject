@@ -1,0 +1,16 @@
+import collections
+stack = collections.deque()
+print(stack)
+stack.append(10)
+stack.append(21)
+stack.append(-21)
+stack.append('Python')
+stack.append('Django')
+stack.append(-12)
+stack.append('CPU')
+print(stack)
+stack.pop()
+print(stack)
+print(stack.pop())
+print(stack)
+print(not stack) # False bcos the class is not empty

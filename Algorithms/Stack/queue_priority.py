@@ -1,0 +1,12 @@
+q = []
+q.append(110)
+q.append(54)
+print(q)
+q.sort()
+print(q)
+q.append(45)
+print(q)
+q.sort()
+print(q)
+print(q.pop(0))
+print(q)
