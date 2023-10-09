@@ -1,0 +1,21 @@
+def greet(name = 'Saheed', msg='Good Bye'):
+    print('Hello', name)
+greet()
+greet('Oladiipo')
+greet(name='Python')
+#print(name, msg)
+print('######################')
+
+def greet(name = 'Saheed', msg='Good Bye'):
+    #print('Hello', name)
+    print('Hello', name, msg)
+greet()
+greet('Oladiipo')
+greet(name='Python')
+greet(name='Fatimah')
+print('____________________')
+greet(name='Hawwa', msg='Good Morning')
+greet('Peter', 'Good afternoon')
+greet('Aisha', msg='Bye')
+greet(msg='Good Evening', name='Muhammad')
+#print(name, msg)

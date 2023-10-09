@@ -1,0 +1,8 @@
+f_input = open('input.txt')
+f_output = open('output', 'w')
+data = f_input.read()
+f_output.write(data.title())
+#print(data, end='')
+print('Data Copied Succesfully')
+f_input.close()
+f_output.close()

@@ -1,0 +1,8 @@
+f = open('abc.txt', 'w')
+f.write('Python\n')
+f.write('Software\n')
+f.write('Django\n')
+f.write('PHP\n')
+f.write('Java\n')
+print('Data written to the file successfully')
+f.close()

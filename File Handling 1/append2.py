@@ -1,0 +1,6 @@
+f = open('saheed', 'a')
+f.write('Line 1')
+f = open('saheed', 'a')
+f.write('Line 2')
+f = open('saheed', 'a')
+f.write('Line 3')

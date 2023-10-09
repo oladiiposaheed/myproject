@@ -1,0 +1,7 @@
+f = open('abz.txt', 'a')
+f.write('Data Science\n')
+f.write('Computer Science\n')
+f.write('Deep Learning\n')
+f.write('******************\n')
+f.write('Django')
+f.close()

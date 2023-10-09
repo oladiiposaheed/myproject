@@ -1,0 +1,5 @@
+f = open('email.txt')
+print(f.readline(), end='')
+print(f.readline(), end='')
+print(f.readline(), end='')
+print(f.readline(), end='')
