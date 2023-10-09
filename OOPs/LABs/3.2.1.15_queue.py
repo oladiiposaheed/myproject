@@ -1,0 +1,33 @@
+import time
+
+
+class QueueError(IndexError):
+    pass
+
+class Queue:
+    def __init__(self):
+        self.queue = []
+
+    def put(self, elem):
+        self.queue.insert(0, elem)
+
+    def get(self):
+        if len(self.queue) > 0:
+            elem = self.queue[-1]
+            del self.queue[-1]
+            return elem
+        else:
+            raise QueueError
+
+que = Queue()
+que.put(1)
+que.put('goat')
+que.put('python')
+que.put(False)
+try:
+    lst = []
+    for i in range(5):
+        print(que.get())
+        time.sleep(3)
+except:
+    print('Queue error')
